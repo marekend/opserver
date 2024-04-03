@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+
+@keyframes fadeIn 
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+   /*background-image: url("bg.png"); */
+    background-color: rgba(0, 0, 0, 0.97);
+}
+
+.intro h1
+{
+    font-family: 'Oswald', cursive;
+    text-align: center;
+    color: #ffffffe8;
+    margin: auto;
+    padding-top: 300px;
+    font-size: 150px;
+    animation: fadeIn 5s;
+}
+
+
+.intro h2
+{
+    font-family: 'Oswald', cursive;
+    text-align: center;
+    color: #ffffffe8;
+    margin: auto;
+    animation: fadeIn 5s;
+}
+
+.about
+{
+    padding: 400px;
+}
+
+.about p
+{
+    font-family: 'Oswald', cursive;
+    color: #ffffffe8;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* .image-slider
+{
+    position: relative;
+    prndi si left: 10%;
+    top: 175%; 
+    width: 80%;
+    height: 700px;
+    overflow: hidden;
+} 
+*/
+
+.slider-inner
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6rem;
+    overflow: hidden;
+    cursor: grab;
+    padding: 0 3rem;
+}
+
+.slide-img
+{
+    text-align: center;
+}
+
+.screenshot
+{
+    height: 75%;
+}
+
+
+footer
+{
+background: rgba(20, 20, 20, 1);
+font-family: 'Oswald', cursive;
+color: #ffffffe8;
+display: flex;
+padding: 1.5rem;
+text-align: center;
+justify-content: space-between;
+}
